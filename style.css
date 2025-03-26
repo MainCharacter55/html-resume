@@ -1,0 +1,141 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-style: solid;
+    border-color: black;
+    margin: 10px 25px 10px 50px;
+}
+.info {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.space {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0px;
+    padding: 25px;
+    background-color: #D9EAFD;
+}
+
+.photo {
+    order: 1;
+    padding: 10px;
+}
+.me {
+    order: 2;
+    padding: 10px;
+}
+.contact {
+    order: 3;
+    padding: 10px;
+}
+.about {
+    order: 4;
+    padding: 10px;
+}
+.skills {
+    order: 5;
+    padding: 10px;
+}
+.education {
+    order: 6;
+    padding: 10px;
+}
+.hobbies {
+    order: 7;
+    padding: 10px;
+}
+.certificates {
+    order: 8;
+    padding: 10px;
+}
+.language {
+    order: 9;
+    padding: 10px;
+}
+.reason {
+    order: 10;
+    padding: 10px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-family: 'Noto Sans JP', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-top: 50px;
+    }
+    .photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border-style: solid;
+        border-color: black;
+        margin: 0;
+    }
+    .space {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        background-color: white;
+    }
+
+    .photo {
+        order: 1;
+    }   
+    .me {
+        order: 2;
+    }
+    .contact {
+        order: 3;
+        grid-column: span 2;
+    }
+    .about {
+        order: 4;
+        grid-column: span 2;
+    }
+    .education {
+        order: 5;
+        grid-column: span 2;
+    }
+    .certificates {
+        order: 6;
+    }
+        .skills {
+        order: 7;
+    }
+    .hobbies {
+        order: 8;
+    }
+    .language {
+        order: 9;
+    }
+    .reason {
+        order: 10;
+        grid-column: span 2;
+    }
+}
